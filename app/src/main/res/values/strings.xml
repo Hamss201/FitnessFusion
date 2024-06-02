@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="activity">
+        <item>Low Activity</item>
+        <item>Moderate Activity</item>
+        <item>High Activity</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "535178800484",
+    "firebase_url": "https://fitnessfusion-c33f6-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fitnessfusion-c33f6",
+    "storage_bucket": "fitnessfusion-c33f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535178800484:android:15417f63f9e1ea37c71e71",
+        "android_client_info": {
+          "package_name": "com.example.tester"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRlSqsK59T3UWg2P2Q7FT9okT53Nlvl0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

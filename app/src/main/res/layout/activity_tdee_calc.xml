@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".tdeeCalc">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#256084"
+        app:title="TDEE Calculator"
+        app:titleTextColor="@color/white">
+
+        <Button
+            android:id="@+id/TDEEback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/black"
+            android:backgroundTint="#256084"
+            android:text="Back"
+            android:onClick="onReturn" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/age_input"
+                        android:inputType="number"
+                        android:hint="Enter Age"/>
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/height_input"
+                        android:hint="Enter Height (cm)"/>
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberDecimal"
+                        android:id="@+id/wt_input"
+                        android:hint="Enter Weight (kg)"/>
+
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Body Fat % (Optional)"
+                        android:id="@+id/bodyfat_input"
+                        android:inputType="number|numberDecimal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Activity"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+                    <Spinner
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_input"
+                        android:padding="5dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:id="@+id/radioGroup">
+                        <RadioButton
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textStyle="bold"
+                            android:id="@+id/rb_male"
+                            android:textSize="15dp"
+                            android:layout_gravity="left"
+                            android:layoutDirection="rtl"
+                            />
+                        <RadioButton
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_female"
+                            android:text="Female"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_gravity="left"
+                            android:layoutDirection="rtl"
+                            />
+                    </RadioGroup>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp">
+                    <Button
+                        android:text="Calculate"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#256084"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button"
+                        android:onClick="onCalculate"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

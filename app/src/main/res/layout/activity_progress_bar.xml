@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#256084"
+        app:title="Progress Bar"
+        app:titleTextColor="@color/white">
+
+        <Button
+            android:id="@+id/progBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#256084"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Back"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/circular"
+            android:progressDrawable="@drawable/circle_progress"/>
+
+        <TextView
+            android:id="@+id/steps06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Steps"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Goal: 10 000"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

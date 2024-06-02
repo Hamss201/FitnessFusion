@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_second"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#256084"
+        app:title="TDEE Results"
+        app:titleTextColor="@color/white">
+
+    ></androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Body Mass Index"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmiResult"
+                android:hint="bmiResult"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:background="@drawable/search_bkg"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Basal Metabolic Rate"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="BMR Result"
+                            android:id="@+id/bmrResult"
+                            android:padding="5dp"
+                            android:background="@drawable/search_bkg"
+                            android:textSize="15dp"
+                            android:textColor="#36454f"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+
+                    android:text="Total Daily Calorie Expenditure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:hint="BMR Result"
+                    android:background="@drawable/search_bkg"
+                    android:id="@+id/tddeResult"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <Button
+                    android:id="@+id/bmiBack"
+                    android:textColor="@color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#256084"
+                    android:text="Go Back"
+                    android:onClick="onReturn"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bmi"
+                        android:text="BMI Score:"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#36454f"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Underweight - 18.5 or less\nNormal Weight - 18.5 – 24.99	\nOverweight - 25 – 29.99	\nObese - 30+"
+                        android:textSize="15dp"
+                        android:textColor="#36454f"/>
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
